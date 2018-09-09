@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.example.icminwertaryzacja.MainActivity">
+
+    <item
+        android:id="@+id/info"
+        android:title="@string/Information"
+        />
+    <item
+        android:id="@+id/exportToCSV"
+        android:title="@string/save_in_csv_file"
+        android:visible="false"
+        />
+    <item
+        android:id="@+id/listEmpty"
+        android:title="@string/entry_list"
+        android:visible="false"
+        />
+    <item
+        android:id="@+id/listDesc"
+        android:title="@string/scanned_list"
+        android:visible="false"
+        />
+    <item
+        android:id="@+id/changeLocation"
+        android:title="@string/change_location"
+        android:visible="false"
+        />
+    <item
+        android:id="@+id/exit"
+        android:title="@string/end_app"
+        />
+</menu>

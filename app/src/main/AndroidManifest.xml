@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.mbit.inventorytracker">
+
+    <uses-permission android:name="com.symbol.emdk.permission.EMDK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+    <application
+        android:name="com.mbit.inventorytracker.InitApp"
+        android:allowBackup="true"
+        android:icon="@drawable/scan_box"
+        android:label="@string/app_name"
+        android:theme="@style/MyMaterialTheme">
+        <uses-library
+            android:name="com.symbol.emdk"
+            android:required="false"/>
+
+        <activity
+            android:name="com.mbit.inventorytracker.activities.MainActivity"
+            android:logo="@drawable/icminwentory_title"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:label="@string/app_name">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.BarcodeGenerationActivity"/>
+        <activity android:name=".activities.BarcodeScanningActivity"/>
+    </application>
+
+</manifest>
